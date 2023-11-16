@@ -23,7 +23,7 @@ func ConnectDB() {
 			Colorful:                  false,        // Disable color
 		},
 	)
-	database, err := gorm.Open(mysql.Open("golanguser:Juragan_2023@tcp(localhost:3306)/golangdb"), &gorm.Config{
+	database, err := gorm.Open(mysql.Open("golanguser:password@tcp(localhost:3306)/golangdb"), &gorm.Config{
 		Logger: newLogger,
 	})
 	if err != nil {
